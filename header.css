@@ -23,10 +23,10 @@ nav#topLinks a:hover, nav#topLinks a:active {
 
 nav#mainLinks ul li {
 	background-color: rgb(178, 34, 34);
-	display: block;
+	/*display: block;
 	float: left;
 	text-align: center;
-	width: 25%;
+	width: 25%;*/
 	border-bottom: solid 2px black;
 	border-top:  solid 2px black;
 }

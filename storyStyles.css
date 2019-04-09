@@ -45,3 +45,15 @@ article {
 	background-color: white;
 }
 
+main {
+	display: flex;
+	flex: 2 2 20em;
+}
+
+
+
+div.copyright {
+	font-size: 300%;
+	text-align: right;
+	padding-right:30px;
+}
