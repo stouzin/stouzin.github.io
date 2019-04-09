@@ -20,7 +20,7 @@
    <link href="tb_visual3.css" rel="stylesheet">
    <link href="tb_styles3.css" rel="stylesheet">
    <link href="slideshow.css" rel="stylesheet">
-   <link href="home.css" rel="stylesheet">
+   <link href="header.css" rel="stylesheet">
    
    
 </head>
@@ -34,7 +34,7 @@
       <img src="bookheader.jpg" alt="Books" />
 	  <div class="titleText">TRU LITERATURE MAGAZINE</div>
       <nav class="horizontal" id="mainLinks">
-	  <img class="icon" id="navicon" src="icons8-menu.svg" onclick="icon()" >
+	  <img class="icon" src="icons8-menu.svg">
          <ul>
             <li><a href="home.html">Home</a></li>
             <li class="dropdown">
@@ -61,9 +61,9 @@
       </title>
       <nav class="item2">
       <ul>
-         <li  class ="side"><a href="story_Ben.html">Fishing with Friends</a></li>
-         <li class ="side"><a href="story_ShaneTouzin.html">Cupidious</a></li>
-         <li class ="side"><a href="story_Moira.html">Dear Adam</a></li>
+         <li  class ="side"><a href="tss_home.html">Story One</a></li>
+         <li class ="side"><a href="https://www.tru.ca/">Story Two</a></li>
+         <li class ="side"><a href="tss_bike.html">Story3</a></li>
          <li class ="side" ><a href="tss_swim.html" >Emma Yarrow <br> goes to the Moon</a></li>
 		 <li class ="side"><a href="tss_coach.html">Story5</a></li>
          <li class ="side"><a href="http://www.active.com/">Story 6</a></li>
@@ -80,47 +80,43 @@
 
 <div class="mySlides fade">
   
-  <a href="story_Ben.html">
-  <img src="lake2.jpg" style="width:100%" class="responsive">
+  <img src="img_nature_wide.jpg" style="width:100%" class="responsive">
   <div class="titleTop">
-		<div class="titleText"><font size="500">Fishing with Friends</font></div>
+		<div class="titleText">Story One</div>
 	</div>
-	
 	
 	<div class="authorBot">
-		<div class="authorText">By: Benjamin Lawrence</div>
+		<div class="authorText">By: Anon</div>
 	</div>
-	</a>
 </div>
 
 <div class="mySlides fade">
  
-  <a href="story_ShaneTouzin.html">
-  <img src="cupidious.jpg" style="width:100%" class="responsive">
+  <a href="http://www.google.com">
+  <img src="img_snow_wide.jpg" style="width:100%" class="responsive">
   </a>
   
-	 <a href="story_ShaneTouzin.html"><div class="titleTop">
-		<div class="titleText">Cupidious</div>
+	<div class="titleTop">
+		<div class="titleText">Story Name</div>
 	</div>
 	
 	<div class="authorBot">
 		<div class="authorText">By: Shane Touzin</div>
-	</div> </a>
+	</div>
   
  
 </div>
 
 <div class="mySlides fade">
-   <a href="story_Moira.html">
-  <img src="adam.jpg" style="width:100%" class="responsive">
+  
+  <img src="img_mountains_wide.jpg" style="width:100%" class="responsive">
   <div class="titleTop">
-		<div class="titleText">Dear Adam</div>
+		<div class="titleText">Story Three</div>
 	</div>
 	
 	<div class="authorBot">
-		<div class="authorText">By: Moira Laidlaw</div>
+		<div class="authorText">By: Jon Bowden</div>
 	</div>
-	</a>
 </div>
 
 <div class="mySlides fade">
@@ -131,7 +127,7 @@
 	</div>
 	
 	<div class="authorBot">
-		<div class="authorText">By: </div>
+		<div class="authorText">By: Janice Parker</div>
 	</div>
 </div>
 
@@ -224,14 +220,6 @@ function mouseOut() {
 }
 	
 	
-function icon() {
-  var x = document.getElementById("mainLinks");
-  if (x.className === "horizontal") {
-    x.className += " responsive";
-  } else {
-    x.className = "horizontal";
-  }
-}
 
 
 </script>
