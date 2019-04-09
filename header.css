@@ -1,0 +1,93 @@
+body > header > img {
+	display: block;
+	width: 100%;
+	filter: hue-rotate(340deg);
+	filter: saturate(120%);
+}
+
+body > header > nav#topLinks {
+	background-color: rgb(150, 0, 24);
+	color: white;
+	line-height: 1.7em;
+	text-align: right;
+	padding: 5px 10px 5px 0px;
+}
+
+nav#topLinks a:link, nav#topLinks a:visited {
+	color: white;
+}
+
+nav#topLinks a:hover, nav#topLinks a:active {
+	color: rgb(66, 13, 9);
+}
+
+nav#mainLinks ul li {
+	background-color: rgb(178, 34, 34);
+	display: block;
+	float: left;
+	text-align: center;
+	width: 25%;
+	border-bottom: solid 2px black;
+	border-top:  solid 2px black;
+}
+
+nav#mainLinks ul li:first-of-type {
+	border-left: solid 1px black;
+}
+
+nav#mainLinks ul li:last-of-type {
+	border-right: solid 1px black;
+}
+
+ div a, .dropdown {
+	background-color: rgb(178, 34, 34);
+	width: 20%;
+ }
+
+nav#mainLinks div {
+	
+	
+}
+
+nav#mainLinks a, .dropdown-content a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 3px 16px;
+  text-decoration: none;
+  
+}
+
+nav#mainLinks a, .dropdown-content a{
+	color: white;	
+	display: block;
+	height: 2.5em;	
+	text-align: center;
+	line-height: 2.5em;
+}
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+	color: white;
+}
+
+nav#mainLinks a:hover, nav#mainLinks a:active {
+	background-color: rgb(205, 92, 92);
+}
+
+.dropdown div a{
+	background-color: rgb(146, 34, 34);
+	width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 206px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  width: 206px;
+}
