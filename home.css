@@ -94,4 +94,17 @@ nav#mainLinks a:hover, nav#mainLinks a:active {
   width: 206px;
 }
 
+a.truName::first-letter{  
+  font-size: 500%;
+  color: #0;
+  line-height: 2;
+  font-weight: bold;
+  float: left;
+}
+
+
+
+
+
+
 
