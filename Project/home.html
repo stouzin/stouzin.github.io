@@ -21,11 +21,11 @@
    <link href="tb_styles3.css" rel="stylesheet">
    <link href="slideshow.css" rel="stylesheet">
    <link href="home.css" rel="stylesheet">
-   
+   <script src="submit.js" type="text/javascript"></script>
    
 </head>
 
-<body>
+<body onload="showSlides()">
    <header>
    <!--
       <nav id="topLinks"> <a href="#">Contact Us</a> | <a href="#">My Account</a> </nav>
@@ -34,7 +34,6 @@
       <img src="bookheader.jpg" alt="Books" />
 	  <div class="titleText">TRU LITERATURE MAGAZINE</div>
       <nav class="horizontal" id="mainLinks">
-	  <img class="icon" id="navicon" src="icons8-menu.svg" onclick="icon()" >
          <ul>
             <li><a href="home.html">Home</a></li>
             <li class="dropdown">
@@ -49,6 +48,14 @@
             <li><a href="about.html">About Us</a></li>
          </ul>
       </nav>
+	  <div class="square">
+		<img class="icon" id="navicon" src="icons8-menu.svg" onclick="icon()" >
+	  </div>
+	  <nav class="vertical" id="phoneLinks">
+		<a href="home.html">Home</a>
+		<a href="submit.html">Submit</a>
+		<a href="about.html">About Us</a>
+		</nav>
    </header>
    <main class="grid-container" class="responsive">
       <title class="item1">
@@ -63,8 +70,8 @@
       <ul>
          <li  class ="side"><a href="story_Ben.html">Fishing with Friends</a></li>
          <li class ="side"><a href="story_ShaneTouzin.html">Cupidious</a></li>
-         <li class ="side"><a href="story_Moira.html">Dear Adam</a></li>
-         <li class ="side" ><a href="story_Erica.html" >Emma Yarrow <br> goes to the Moon</a></li>
+         <li class ="side"><a href="tss_bike.html">Story3</a></li>
+         <li class ="side" ><a href="tss_swim.html" >Emma Yarrow <br> goes to the Moon</a></li>
 		 <li class ="side"><a href="tss_coach.html">Story5</a></li>
          <li class ="side"><a href="http://www.active.com/">Story 6</a></li>
         
@@ -95,11 +102,11 @@
 
 <div class="mySlides fade">
  
-  <a href="story_ShaneTouzin.html">
+  <a href="file:///E:/TRULit/Project/story_ShaneTouzin.html">
   <img src="cupidious.jpg" style="width:100%" class="responsive">
   </a>
   
-	 <a href="story_ShaneTouzin.html"><div class="titleTop">
+	 <a href="file:///E:/TRULit/Project/story_ShaneTouzin.html"><div class="titleTop">
 		<div class="titleText">Cupidious</div>
 	</div>
 	
@@ -111,29 +118,27 @@
 </div>
 
 <div class="mySlides fade">
-   <a href="story_Moira.html">
-  <img src="adam.jpg" style="width:100%" class="responsive">
+  
+  <img src="img_mountains_wide.jpg" style="width:100%" class="responsive">
   <div class="titleTop">
-		<div class="titleText">Dear Adam</div>
+		<div class="titleText">Story Three</div>
 	</div>
 	
 	<div class="authorBot">
-		<div class="authorText">By: Moira Laidlaw</div>
+		<div class="authorText">By: Jon Bowden</div>
 	</div>
-	</a>
 </div>
 
 <div class="mySlides fade">
-     <a href="story_Erica.html">
+  
   <img src="moon.jpg" style="width:100%" class="responsive">
   <div class="titleTop">
 		<div class="titleText emma">Emma Yarrow Goes to Moon</div>
 	</div>
 	
 	<div class="authorBot">
-		<div class="authorText">By: Erica Crowe</div>
+		<div class="authorText">By: Janice Parker</div>
 	</div>
-	</a>
 </div>
 
 </div>
@@ -145,25 +150,28 @@
    <footer>
       <nav class="vertical">
          <ul>
-			<li><a href="https://www.tru.ca/">Thompson Rivers University</a></li>
-            <li><a href="https://www.tru.ca/arts/english-modern-languages.html">TRU English Department</a></li>            
-            <li><a href="https://www.tru.ca/arts/english-modern-languages/undergraduate-programs/creative-writing.html">Creative Writing Minor</a></li>
-            <li><a href="https://www.tru.ca/library.html">TRU Libary</a></li>
-            <li><a href="http://truomega.ca/">The Omega: Student Newspaper</a></li>
+            <li><a href="#">TRU English Department</a></li>
+            <li><a href="#">Thompson Rivers University</a></li>
+            <li><a href="#">Placeholder</a></li>
+            <li><a href="#">PlaceHolder2</a></li>
+            <li><a href="#">Placeholder3</a></li>
          </ul>
       </nav>
       <nav class="vertical">
          <ul>
-            <li><a href="#"><img src= "TRU_Logo.png"/></a></li>
-            
+            <li><a href="#">Other things</a></li>
+            <li><a href="#">Placeholder</a></li>
+            <li><a href="#">Research Sites</a></li>
+            <li><a href="#">Interest Groups</a></li>
+            <li><a href="#">Government Sites</a></li>
          </ul>
       </nav>
       <nav class="vertical">
          <ul>
-            <li><a href="about.html">About TRU Lit Mag</a></li>
-            <li><a href="https://www.facebook.com/touzin">Facebook Contact</a></li>
-            <li><a href="#">X-Ref</a></li>
-            <li><a href="submit.html">Submit</a></li>
+            <li><a href="#">About TRU Lit Mag</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
             <li><a href="#">Help</a></li>
          </ul>
       </nav>
@@ -171,67 +179,6 @@
    </footer>
    
    
-   <script>
-var slideIndex = 0;
-var x;
 
-
-showSlides();
-
-
-
-function showSlides() {
-	  var i;
-	  
-	  var slides = document.getElementsByClassName("mySlides");
-	  var sides = document.getElementsByClassName("side");
-	 
-	  
-	  for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
-	  }
-	  slideIndex++;
-	  if (slideIndex > slides.length) {slideIndex = 1}
-	  for (i = 0; i < sides.length; i++) {
-    sides[i].className = sides[i].className.replace(" active", "");
-  }
-
-	
-	  
-	  slides[slideIndex-1].style.display = "block";  
-	  sides[slideIndex-1].className += " active";
-	  
-	  
-	 
-	  x = setTimeout(showSlides, 4000); // Change image every 4 seconds
-	 
-	
-	  
-	  
-}
-
-function mouseOver() {
-
-	
-	setTimeout(x, 50000000);
-	}
-	
-function mouseOut() {
-
-	document.getElementsByClassName("mySlides").showSlides() = start;
-}
-	
-	
-function icon() {
-  var x = document.getElementById("mainLinks");
-  if (x.className === "horizontal") {
-    x.className += " responsive";
-  } else {
-    x.className = "horizontal";
-  }
-}
-
-
-</script>
 </body>
 </html>

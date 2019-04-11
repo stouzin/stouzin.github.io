@@ -14,7 +14,7 @@ main nav.item2{
 
 main ul li{ 
 	
-	color:(0,0,0,1.0);
+	color:black;
 	display: flex;
 	width: auto;
 	height:100%;

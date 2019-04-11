@@ -9,14 +9,14 @@ body > header > img {
 
 body > header > nav#topLinks {
 	background-color: rgb(150, 0, 24);
-	color: rgba(255,255,255, 1.0);
+	color: white;
 	line-height: 1.7em;
 	text-align: right;
 	padding: 5px 10px 5px 0px;
 }
 
 nav#topLinks a:link, nav#topLinks a:visited {
-	color: rgba(255,255,255, 1.0);
+	color: white;
 }
 
 nav#topLinks a:hover, nav#topLinks a:active {
@@ -24,11 +24,11 @@ nav#topLinks a:hover, nav#topLinks a:active {
 }
 
 nav#mainLinks ul li {
-	background-color: rgb(178, 34, 34);
 	display: block;
+	background-color: rgb(178, 34, 34);
 	float: left;
-	text-align: center;
 	width: 25%;
+	text-align: center;
 	border-bottom: solid 2px black;
 	border-top:  solid 2px black;
 }
@@ -53,23 +53,32 @@ nav#mainLinks div {
 
 nav#mainLinks a, .dropdown-content a{
   display: inline-block;
-  color: rgba(255,255,255, 1.0);
+  color: white;
   text-align: center;
   padding: 3px 16px;
   text-decoration: none;
   
 }
 
+nav#mainLinks ul li {
+	background-color: rgb(178, 34, 34);
+	display: block;
+	float: left;
+	text-align: center;
+	width: 25%;
+	border-bottom: solid 2px black;
+	border-top:  solid 2px black;
+}
+	
 nav#mainLinks a, .dropdown-content a{
-	color: rgba(255,255,255, 1.0);	
+	color: white;	
 	display: block;
 	height: 2.5em;	
 	text-align: center;
 	line-height: 2.5em;
 }
-
 nav#mainLinks a:link, nav#mainLinks a:visited {
-	color: rgba(255,255,255, 1.0);
+	color: white;
 }
 
 nav#mainLinks a:hover, nav#mainLinks a:active {
@@ -94,4 +103,6 @@ nav#mainLinks a:hover, nav#mainLinks a:active {
   width: 206px;
 }
 
-
+@media only screen and(max-width: 600){
+	
+}
