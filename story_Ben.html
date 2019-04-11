@@ -22,6 +22,11 @@
    <link href="slideshow.css" rel="stylesheet">
    <link href="home.css" rel="stylesheet">
    <link href="storyStyles.css" rel="stylesheet">
+   <audio id="audio_play" loop>  
+   <source src="lake_01.mp3" type="audio/mpeg" />
+   </audio>
+   <script src="audio.js" type="text/javascript">
+</script>
    
    
 </head>
@@ -54,10 +59,18 @@
     </header>
     <main class="grid-container" class="responsive">
 		<article>
-		<div class="storyTitle">Fishing with Friends</div>
+		<div class="storyTitle">Fishing With Friends</div>
 		<br>
-		<img src="lake.gif"/>
+		<div class = "muteContain">
+		<img src="lake.gif" onClick="playPause();"/>
+		
+		<div class="muteSign"> 
+		<h4>Click image to Mute/Unmute</h4>
+		<img id="mute" src="Mute_Icon.svg" onClick="playPause();"/>
+		<img id="speaker" src="Speaker_Icon.svg" onClick="playPause();"/>
+		</div>
 		<div class="authorTitle">By: Benjamin Lawrence</div>
+		
 		
 		<div class="WordSection1">
 <p>The lake shivered as a wind blew across it. Trevor watched the ripples on the water, like a shadow of the wind, make their way towards the boat. He braced himself as they reached the boat and the wind bit into the exposed skin on his face. It reached for his body as well but was deflected away by the heavy jacket he wore. Tears formed in the corners of his eyes as he squinted in response to the chill.</p>
@@ -365,6 +378,7 @@
 <p>father died. He remembered feeling devastated and scared, and he remembered Andy holding him up through those moments. And he remembered knowing that he would be there for Andy when he needed him.</p>
 
 <div class="copyright">&copy;</div>
+<br>
 
 
 
@@ -375,7 +389,7 @@
          <ul>
             <li><a href="#">TRU English Department</a></li>
             <li><a href="#">Thompson Rivers University</a></li>
-            <li><a href="#">Placeholder</a></li>
+            <li><a href="">TRU Creative Writing Minor</a></li>
             <li><a href="#">PlaceHolder2</a></li>
             <li><a href="#">Placeholder3</a></li>
          </ul>
@@ -402,59 +416,6 @@
    </footer>
    
    
-   <script>
-var slideIndex = 0;
-var x;
 
-
-showSlides();
-
-
-
-function showSlides() {
-	  var i;
-	  
-	  var slides = document.getElementsByClassName("mySlides");
-	  var sides = document.getElementsByClassName("side");
-	 
-	  
-	  for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";  
-	  }
-	  slideIndex++;
-	  if (slideIndex > slides.length) {slideIndex = 1}
-	  for (i = 0; i < sides.length; i++) {
-    sides[i].className = sides[i].className.replace(" active", "");
-  }
-
-	
-	  
-	  slides[slideIndex-1].style.display = "block";  
-	  sides[slideIndex-1].className += " active";
-	  
-	  
-	 
-	  x = setTimeout(showSlides, 4000); // Change image every 4 seconds
-	 
-	
-	  
-	  
-}
-
-function mouseOver() {
-
-	
-	setTimeout(x, 50000000);
-	}
-	
-function mouseOut() {
-
-	document.getElementsByClassName("mySlides").showSlides() = start;
-}
-	
-	
-
-
-</script>
 </body>
 </html>
