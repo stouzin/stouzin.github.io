@@ -24,14 +24,19 @@ nav#topLinks a:hover, nav#topLinks a:active {
 }
 
 nav#mainLinks ul li {
-	background-color: rgb(178, 34, 34);
-	display: block;
-	float: left;
-	text-align: center;
-	width: 25%;
-	border-bottom: solid 2px black;
-	border-top:  solid 2px black;
+
 }
+nav#mainLinks ul li {
+		display: block;
+		width: 25%;
+		background-color: rgb(178, 34, 34);
+		
+		float: left;
+		text-align: center;
+
+		border-bottom: solid 2px black;
+		border-top:  solid 2px black;
+	}
 
 nav#mainLinks ul li:first-of-type {
 	border-left: solid 1px black;
@@ -50,6 +55,8 @@ nav#mainLinks div {
 	
 	
 }
+
+
 
 nav#mainLinks a, .dropdown-content a{
   display: inline-block;
@@ -95,11 +102,12 @@ nav#mainLinks a:hover, nav#mainLinks a:active {
 }
 
 
+main.responsive{  resize: vertical; display:flex;}
 
-
+article{  resize: vertical; display:flex;}
 
 input[type=text], select, textarea {
-  width: 100%;
+  /*width: 100%;*/
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -125,8 +133,21 @@ input[type=submit]:hover {
   background-color: #e12222;
 }
 
+article.item3{width: 100%;}
+
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  width: 100%;
+  height: 100%;
+  resize: vertical;
+  display:flex;
 }
+
+
+textarea#title{height: 20%;}
+
+textarea#entry{height: 60%;}
+
+textarea#date{height: 20%;}
