@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+img.aerial {
+	width: 100%;
+	height: auto;
+	filter: blur(2px) saturate(1) hue-rotate(35deg);
+-webkit-filter: blur(2px) saturate(1) hue-rotate(35deg);
+
+}
+
+.aboutText {
+  position: relative;
+  text-align: center;
+  color: rgba(255,255,255,1.0);
+}
+
+.aboutTitle {
+
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  display:flex;
+  background-color: white;
+  font-family: Futura;
+  color: rgba(0,0,0,1.0);
+  font-size: 4.0em;
+  padding: 6px 10px 6px 10px;
+  font-weight: bold;
+  
+}
+
+.aboutP {
+
+  position: absolute;
+  bottom: 15%;
+  
+  display:flex;
+  background-color: rgba(255,255,255,1.0);
+  font-family: Futura;
+  color: rgba(0,0,0,1.0);
+  font-size: 2.5em;
+  padding: 6px 10px 6px 10px;
+  margin:30px;
+  flex: 1 1 2em;
+  text-align: left;
+  
+  
+}
