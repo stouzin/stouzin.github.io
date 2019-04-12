@@ -1,1 +1,188 @@
-home.html
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+
+    
+    Home Page TRU LIT Magazine
+    Author: Jonathan Bowden Shane Touzin
+    Date:   1/28/19
+
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TRU Lit Magazine</title>
+   
+   
+   <link href="side.css" rel="stylesheet">
+   <link href="tb_base.css" rel="stylesheet">
+   <link href="tb_visual3.css" rel="stylesheet">
+   <link href="tb_styles3.css" rel="stylesheet">
+   <link href="slideshow.css" rel="stylesheet">
+   <link href="home.css" rel="stylesheet">
+   <script defer src="submit.js" type="text/javascript"></script>
+   
+</head>
+
+<body onload="showSlides(); setInterval('showTime()',1000)">
+   <header>
+   <!--
+      <nav id="topLinks"> <a href="#">Contact Us</a> | <a href="#">My Account</a> </nav>
+	  -->
+	  
+      <img src="bookheader.jpg" alt="Books" />
+	  <div class="titleText">TRU LITERATURE MAGAZINE</div>
+      <nav class="horizontal" id="mainLinks">
+         <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Archive</a>
+					<div class="dropdown-content">
+						<a href="story_Ben.html">Fishing with Friends</a>
+						<a href="story_ShaneTouzin.html">Cupidious</a>
+						<a href="story_Moira.html">Dear Adam</a>
+						<a href="story_Erica.html">Emma Yarrow</a>
+					</div>
+				</li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="about.html">About Us</a></li>
+         </ul>
+      </nav>
+	  <div class="square">
+		<img class="icon" id="navicon" src="icons8-menu.svg" onclick="icon()" >
+	  </div>
+	  <nav class="vertical" id="phoneLinks">
+		<a href="home.html">Home</a>
+		<a href="home.html">Articles</a>
+		<a href="submit.html">Submit</a>
+		<a href="about.html">About Us</a>
+		</nav>
+   </header>
+   <main class="grid-container" class="responsive">
+      <title class="item1">
+         <h1>TRu Lit Magazine</h1>
+		 
+		
+		 
+		
+		 
+      </title>
+      <nav class="item2">
+      <ul>
+         <li  class ="side"><a href="story_Ben.html">Fishing with Friends</a></li>
+         <li class ="side"><a href="story_ShaneTouzin.html">Cupidious</a></li>
+         <li class ="side"><a href="story_Moira.html">Dear Adam</a></li>
+         <li class ="side" ><a href="story_Erica.html" >Emma Yarrow <br> goes to the Moon</a></li>
+		 <li class ="side"><a href="#">Etc.</a></li>
+         <li class ="side"><a href="#">. . .</a></li>
+        
+      </ul>
+   </nav>
+      <article class="item3">
+		 
+		 
+		 
+	
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <a href="story_Ben.html">
+  <img src="lake2.jpg" style="width:100%" class="responsive">
+  <div class="titleTop">
+		<div class="titleText"><font size="500">Fishing with Friends</font></div>
+	</div>
+	
+	
+	<div class="authorBot">
+		<div class="authorText">By: Benjamin Lawrence</div>
+	</div>
+	</a>
+</div>
+
+<div class="mySlides fade">
+ 
+  <a href="story_ShaneTouzin.html">
+  <img src="cupidious.jpg" style="width:100%" class="responsive">
+  </a>
+  
+	 <a href="story_ShaneTouzin.html"><div class="titleTop">
+		<div class="titleText">Cupidious</div>
+	</div>
+	
+	<div class="authorBot">
+		<div class="authorText">By: Shane Touzin</div>
+	</div> </a>
+  
+ 
+</div>
+
+<div class="mySlides fade">
+  <a href="story_Moira.html">
+  <img src="adam.jpg" style="width:100%" class="responsive">
+  </a>
+  <div class="titleTop">
+		<div class="titleText">Dear Adam</div>
+	</div>
+	
+	<div class="authorBot">
+		<div class="authorText">By: Moira Laidlaw</div>
+	</div>
+</div>
+
+<div class="mySlides fade">
+   <a href="story_Erica.html">
+  <img src="moon.jpg" style="width:100%" class="responsive">
+  <div class="titleTop">
+		<div class="titleText emma">Emma Yarrow Goes to Moon</div>
+	</div>
+	
+	<div class="authorBot">
+		<div class="authorText">By: Erica Crowe</div>
+	</div>
+	</a>
+</div>
+
+</div>
+
+
+
+
+
+      </article>
+   </main>
+   <footer>
+      <nav class="vertical">
+         <ul>
+            <li><a href="https://www.tru.ca/">Thompson Rivers University</a></li>
+            <li><a href="https://www.tru.ca/arts/english-modern-languages.html">TRU English Department</a></li>
+            <li><a href="https://www.tru.ca/arts/english-modern-languages/undergraduate-programs/creative-writing.html">Creative Writing Minor</a></li>
+            <li><a href="https://www.tru.ca/library.html">TRU Libary</a></li>
+            <li><a href="http://truomega.ca/">The Omega: Student Newspaper</a></li>
+         </ul>
+      </nav>
+      <nav class="vertical">
+         <ul>
+            <li><a href="#"><img src= "TRU_Logo.png"/></a></li>
+         </ul>
+      </nav>
+      <nav class="vertical">
+         <ul>
+            <li><a href="about.html">About TRU Lit Mag</a></li>
+            <li><a href="https://www.facebook.com/touzin">Facebook Contact</a></li>
+            <li><a href="xref.html">X-Ref</a></li>
+            <li><a href="submit.html">Submit</a></li>
+            <li><a href="#">Help</a></li>
+         </ul>
+      </nav>
+	  <nav>
+      <ul><li id="time">Time: </li></ul></nav>
+      <section></section>
+   </footer>
+   
+   
+
+</body>
+</html>
