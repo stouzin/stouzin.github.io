@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Verdana;
+	/*src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');*/
+}
+
+div.storyBody::first-letter {
+  font-size: 500%;
+  color: #0;
+  line-height: 1;
+  font-weight: bold;
+  float: left;
+}
+
+div.storyTitleTouzin{
+	font-family: Geneva, Arial, sans-serif; 
+	font-weight: bold;
+	text-align: center;
+	font-size: 500%;
+}
+
+div.storyTitle{
+	font-family: Apple Chancery, Arial, sans-serif; 
+	font-weight: bold;
+	text-align: center;
+	font-size: 500%;
+}
+
+div.authorTitle{
+	font-family: Geneva, Arial, sans-serif; 
+	font-weight: bold;
+	text-align: center;
+	font-size: 150%;
+	font-style: italic;
+}
+
+div.storyBody{
+	font-size:125%;
+	font-family: Geneva, Arial, sans-serif; 
+	line-height: 1.25;
+}
+
+img {
+	width: 100%;
+}
+
+
+
+article {
+	background-color: rgba(255,255,255, 0.3);
+}
+
+main {
+	display: flex;
+	flex: 2 2 20em;
+}
+
+
+
+div.copyright {
+	font-size: 300%;
+	text-align: right;
+	padding-right:30px;
+}
+
+body > main > article > div.storyTitleTouzin{
+	text-shadow: 3px 3px hsl(244, 60%, 29%);
+}
+
+@keyframes moon {
+  from {background-position: left, center;}
+  to {background-position: right, center;}
+}
+
+
+
+body > main > article.erica {
+  background-image: url("aMoon.svg"), url("galaxy2.jpg");
+  background-color: black;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 15%, 2000px 1000px;
+  background-attachment: fixed;
+  background-position: left, center; 
+  color: rgba(255,255,255,03);
+  animation-name: moon;
+  animation-duration: 130s;
+  
+  animation-iteration-count: infinite;
+  
+
+}
+
+body > main > article > div.muteContain {
+  position: relative;
+  
+}
+
+body > main > article > div.muteSign {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  size: 10%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 75%;
+  
+}
+
+body > main > article > div.muteContain > div.muteSign > img:nth-child(n){
+  position: absolute;
+  bottom: 95%;
+  right: 5%;
+  background-color: rgba(200,200,200,1.0);
+  width: 120px;
+  height: 100px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.5;
+  border-radius: 25px;
+	
+}
+
+body > main > article > div.muteContain > div.muteSign > img:nth-child(3){
+	display: none;
+}
+
+body > main > article > div.muteContain > div.muteSign > h4{
+	text-align: right;
+}
+
+
+

@@ -1,0 +1,374 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Verdana;
+	/*src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');*/
+}
+
+
+/* HTML Styles */
+
+html {  
+   color: rgb(51, 51, 51);
+   font-size: 12px;
+}
+
+
+/* Page Body Styles */
+
+body {
+   background-color: rgb(211, 211, 211);
+   font-family: Verdana, Geneva, Arial, sans-serif; 	
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 960px;   
+   display: block;
+}
+
+
+/* Body Header Styles */
+
+body > header > img {
+	display: block;
+	width: 100%;
+	filter: hue-rotate(340deg);
+	filter: saturate(120%);
+}
+
+body > header > nav#topLinks {
+	background-color: rgb(150, 0, 24);
+	color: white;
+	line-height: 1.7em;
+	text-align: right;
+	padding: 5px 10px 5px 0px;
+}
+
+nav#topLinks a:link, nav#topLinks a:visited {
+	color: white;
+}
+
+nav#topLinks a:hover, nav#topLinks a:active {
+	color: rgb(66, 13, 9);
+}
+
+
+
+
+
+nav#mainLinks a:link, nav#mainLinks a:visited {
+	color: white;
+}
+
+nav#mainLinks a:hover, nav#mainLinks a:active {
+	background-color: rgb(205, 92, 92);
+}
+
+
+/* Main Styles */
+main {
+	background-color: white;	
+	clear: both;			   
+	padding: 30px 20px 10px 20px;
+	display: grid;
+}
+
+main header {
+	margin: 20px auto;	
+	width: 70%;
+}
+
+main header h1 {
+	color: rgb(97, 66, 28);	
+	font-family: Champagne, cursive;
+	font-size: 5em;
+	text-align: center;
+}
+
+
+
+
+
+/* Article Styles */
+
+article { 	
+	margin: none;
+	width: 100%;	
+}
+
+article h1 {
+	color: rgb(147, 116, 68);
+	font-family: Baskerville, "Palatino Linotype", Palatino, 
+	             "Century Schoolbook", "Times New Roman", serif;
+	font-size: 2em;
+	margin: none;
+	padding-top: 10px;
+}
+	
+article p {
+	font-size: 1.2em;
+	margin: 20px 30px 20px 20px;
+}
+
+/* Footer Styles */
+
+footer {
+	background-color: rgb(180, 0, 20);	
+	color: white;	
+	display: block;
+	padding: 25px;
+}
+
+body > footer > nav.vertical, body > footer > section {
+	float: left;
+	width: 25%;	
+}
+
+body > footer > nav.vertical > ul {
+	line-height: 2em;
+}
+
+footer nav a {
+	text-decoration: none;
+}
+
+footer a:visited, footer a:link {
+	color: white;
+}
+
+footer a:hover, footer a:active {
+	color: white;
+}
+
+footer::after {
+   clear: both;   
+   content: "";
+   display: table;
+}
+body main > nav{
+	background-color: rgb(211, 211, 211);
+	font-family: Verdana, Geneva, Arial, sans-serif; 
+}
+
+main.item1 { grid-area: title; }
+main.item2 { grid-area: nav; }
+main.item3 { grid-area: article; }
+
+main.grid-container{
+	display: flex-grid;
+	grid-template-areas:
+    'nav title title title title title'
+    'nav article article article article article'
+    'nav article article article article article';
+	background-color: white;
+	padding: 0px;
+	margin:0px;
+}
+
+main.item1{
+	background-color: red;
+}
+
+.icon{
+	display: none;
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+	.icon{
+		display: inline-block;
+		width = 20%;
+	}
+	
+	#phoneLinks{
+		display: none;
+	}
+	
+	nav#phoneLinks img{
+		
+		background-color: hsl(0, 68%, 42%);
+		position: absolute;
+		padding-left:1.25em;
+		float: top;
+		clear: right;
+		display: inline-block;
+	}
+	
+	.icon:active{
+		transform: rotate(90deg);
+	}
+	
+	nav#phoneLinks a:active, .icon:active, .icon:hover, nav#phoneLinks a:hover{
+		background-color: rgb(66, 13, 9);
+	}
+	
+	nav#phoneLinks a{
+		display: block;
+		background-color: hsl(0, 68%, 42%);
+		
+	}
+	nav#phoneLinks{
+		background-color:rgba(0, 0, 0, 1);
+	}
+	nav#phoneLinks, nav#phoneLinks a{
+		width: 100%;
+	}
+	nav#phoneLinks a{
+		padding-top: 8px;
+		
+		padding-bottom: 8px;
+		height: ;
+		background: hsl(0, 68%, 42%);
+		text-align: center;
+		font-size: 6vw;
+		color: rgba(255, 255, 255, 1);
+		/*margin-bottom: 5px;*/
+		
+		border: 2px solid rgba(0, 0, 0, 1);
+	}
+	.horizontal {display: none;}
+	
+	.icon{display: block;}
+	.icon {float: none;
+	/*border: 1px solid hsl(9, 5%, 60%);*/
+	padding-left: 5px;
+	padding-right: 5px;
+	display: block;
+	width: 10%;
+	min-width: 52px;
+	clear: right;
+	border-right: 2px solid rgba(0,0,0,1);
+	border-radius: 4px;
+	/*margin-color: rgba(212,49,28,1);*/
+	/*background-color: hsl(20, 50%, 42%);}*/
+}
+	
+	header div.square{
+/*		border-top: 1px solid */
+		background-color: hsl(0, 68%, 42%);
+		margin: 0px;
+		padding: 0px;
+		border: 2px solid rgba(0,0,0,1);
+		z-index:1001;
+	}
+	
+	
+	/*header nav ul {display: none;}*/
+	.horizontal.responsive{position: relative;}
+	.horizontal.responsive{display: none;}
+	/*.icon{width: 5%;}*/
+	.horizontal.responsive .icon{position: absolute;
+    left: 0;
+    top: 0;}
+	
+	main{
+		box-shadow: none;
+	}
+  }
+ 
+  nav, nav#mainLinks, nav#mainLinks a{
+	  /*width: 100%;*/
+  }
+  body header{
+	  display: inline;
+	  width: 100%;
+  }
+  /*.horizontal.responsive a{
+	width: 100%;
+    float: none;
+    display: block;
+    text-align: left;
+  }*/
+  .horizontal.responsive{display:none;
+  width: 100%;
+  background-color: black;}
+	.horizontal.responsive ul{
+		display: none;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 600px;
+	}
+	.horizontal.responsive ul li {
+	display: none;
+	width: 600%;
+    float: none;
+    text-align: left;
+	
+}
+
+@media only screen and (min-width:601px){
+	nav#phoneLinks, nav#phoneLinks a, nav#phoneLinks img{
+		display: none;
+	}
+	.icon{display:none;}
+
+	body main > nav{
+		background-color: rgb(211, 211, 211);
+		font-family: Verdana, Geneva, Arial, sans-serif; 
+	}
+
+	main.item1 { grid-area: title; }
+	main.item2 { grid-area: nav; }
+	main.item3 { grid-area: article; }
+
+	main.grid-container{
+		display: flex-grid;
+		grid-template-areas:
+		'nav title title title title title'
+		'nav article article article article article'
+		'nav article article article article article';
+		background-color: white;
+		padding: 0px;
+		margin:0px;
+	}
+
+	main.item1{
+		background-color: red;
+	}
+
+	.icon{
+		display: none;
+	}
+	
+	nav#mainLinks ul li {
+		background-color: rgb(178, 34, 34);	
+		display: block;
+		float: left;
+		text-align: center;
+		width: 25%;	
+	}
+
+	nav#mainLinks ul li a {
+		color: white;	
+		display: block;
+		height: 2.5em;	
+		text-align: center;
+		line-height: 2.5em;	
+	}
+
+	nav#mainLinks a:link, nav#mainLinks a:visited {
+		color: white;
+	}
+
+	nav#mainLinks a:hover, nav#mainLinks a:active {
+		background-color: rgb(205, 92, 92);
+	}
+	
+	nav#mainLinks ul li {
+	background-color: rgb(178, 34, 34);	
+	display: block;
+	float: left;
+	text-align: center;
+	width: 25%;
+	}
+	nav#mainLinks ul li a {
+		color: white;	
+		display: block;
+		height: 2.5em;	
+		text-align: center;
+		line-height: 2.5em;	
+	}
+}
